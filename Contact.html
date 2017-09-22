@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CONTACT WIP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="contactWIP.css">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  .carousel-inner > .item > img{
+      width: auto;
+      height: 300px;
+    }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none;
+    }
+    .btn-rounded-white {display:inline-block;color:#000000;padding:15px 25px;border:3px solid #000000;border-radius:30px;-webkit-transition:.5s ease all;transition:.5s ease all; text-align:center;}
+
+    .btn-rounded-white:hover {color:#3498db;background:#fff;text-decoration:none}.shadow{box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);}
+
+}
+
+html,
+body,
+.view {
+    height: 100%;
+}
+
+.view {
+    background: url("background2WIP.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-origin: content-box;
+}
+
+  </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse fixed">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--<a class="navbar-brand" href="#">Logo</a>-->
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li class="active"><a href="Contact.html">Contact</a></li>
+            <li><a href="https://www.linkedin.com/in/brian-macdonald-0a376913/;">LinkedIn</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><!--<a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>--></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="view">
+      <div id="contact-form">
+    	<div>
+    		<h1>Nice to Meet You!</h1>
+    		<h4>Have a question or just want to get in touch? Let's chat.</h4>
+    	</div>
+    		<p id="failure">Oopsie...message not sent.</p>
+    		<p id="success">Your message was sent successfully. Thank you!</p>
+
+    		   <form method="post" action="mailto:brianmacdonald@live.com" enctype="text/plain">
+    			<div>
+    		      <label for="name">
+    		      	<span class="required">Name: *</span>
+    		      	<input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+    		      </label>
+    			</div>
+    			<div>
+    		      <label for="email">
+    		      	<span class="required">Email: *</span>
+    		      	<input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+    		      </label>
+    			</div>
+    			<div>
+    		      <label for="message">
+    		      	<span class="required">Message: *</span>
+    		      	<textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea>
+    		      </label>
+    			</div>
+    			<div>
+    		      <button name="submit" type="submit" id="submit" >SEND</button>
+    			</div>
+    		   </form>
+
+    	</div>
+    </div>
+  </body>
+</html>
